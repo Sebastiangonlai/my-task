@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fondo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title> Mis Notas</title>
+</head>
+
+<body class="p-2 m-2 border-0 bd-example bg-light">
+    <form style="max-width:500px; margin: 1% auto 3% auto;">
+        <h3>Crear <code class="color-title">Nota</code> rápida</h3>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Titulo">
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="etiqueta" name="etiqueta" placeholder="Etiqueta">
+        </div>
+        <div class="mb-2">
+            <input type="text" class="form-control" id="nota" name="nota" placeholder="Nota">
+        </div>
+        <div class="d-grid gap-2">
+            <button id="btnCrearNota" class="btn btn-dark">Crear Nota</button>
+        </div>
+    </form>
+
+    <div class="row">
+        <div class="col-sm-16">
+            <div id="frmNotas"> </div>
+        </div>
+    </div>
+
+    <script type='module' src='main.js'></script>
+</body>
+
+</html>
